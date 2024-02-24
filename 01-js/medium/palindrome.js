@@ -4,7 +4,23 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  // Convert the string to lowercase and remove non-alphabetic characters
+  str = str.toLowerCase().replace(/[^a-z]/g, '');
+
+  let start = 0;
+  let end = str.length - 1;
+
+  // Compare characters from both ends of the string
+  while (start < end) {
+      if (str[start] !== str[end]) {
+          return false; // If characters do not match, it's not a palindrome
+      }
+      start++;
+      end--;
+  }
+
+  return true; // If all characters match, it's a palindrome
 }
+
 
 module.exports = isPalindrome;
