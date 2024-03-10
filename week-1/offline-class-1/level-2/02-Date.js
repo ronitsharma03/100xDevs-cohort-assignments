@@ -1,4 +1,4 @@
-function dateMethods() {
+ function dateMethods() {
   const currentDate = new Date();
   console.log("Current Date:", currentDate);
 
@@ -11,10 +11,10 @@ function dateMethods() {
   console.log("Seconds:", currentDate.getSeconds());
 
   // Setting components of the date
-  currentDate.setFullYear(2022);
+  currentDate.setFullYear(2024);
   console.log("After setFullYear:", currentDate);
 
-  currentDate.setMonth(5); // Setting month to June (zero-indexed)
+  currentDate.setMonth(2); // Setting month to June (zero-indexed)
   console.log("After setMonth:", currentDate);
 
   // Getting and setting time in milliseconds since 1970

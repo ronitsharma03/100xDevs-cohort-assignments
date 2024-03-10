@@ -20,13 +20,14 @@ function signJwt(username, password) {
 }
 
 function verifyJwt(token) {
-    let ans = true;
+    
     try {
        jwt.verify(token, jwtPassword);
+       return true;
     } catch(e) {
-       ans = false;
+    //    ans = false;
     }
-    return ans;
+    return false;
 }
 
 function decodeJwt(token) {

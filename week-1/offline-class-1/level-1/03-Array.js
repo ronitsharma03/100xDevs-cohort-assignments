@@ -23,7 +23,7 @@ function popExample(arr) {
 }
 popExample([1, 2, 3]);
 
-// shift()
+//shift
 function shiftExample(arr) {
   console.log("Original Array:", arr);
 
